@@ -38,9 +38,9 @@ function PopVideoList() {
   }
 
   return (
-    <div className='m-8'>
+    <main className='m-8'>
       <VideoCard videos={popVideos} />
-    </div>
+    </main>
   );
 }
 

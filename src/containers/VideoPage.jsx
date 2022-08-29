@@ -6,11 +6,11 @@ import VideoPlayer from "../components/VideoPlayer";
 function VideoPage() {
 
   return (
-    <div>
+    <>
       <NavBar />
       <VideoPlayer />
       <SiteFooter />
-    </div>
+    </>
   );
 }
 

@@ -14,7 +14,7 @@ function VideoCard({ videos }) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-5">
+    <main className="grid grid-cols-1 gap-4 md:grid-cols-5">
       {videos.map((video) => (
         <Card
           imgSrc={video.snippet.thumbnails.medium.url}
@@ -28,7 +28,7 @@ function VideoCard({ videos }) {
           ></h5>
         </Card>
       ))}
-    </div>
+    </main>
   );
 }
 

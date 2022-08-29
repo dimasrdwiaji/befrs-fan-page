@@ -32,8 +32,8 @@ function VideoPlayer() {
   }
 
   return (
-    <div className="flex items-center">
-      <div className="my-4 md:w-1/2 md:ml-[25vw]">
+    <main className="flex items-center">
+      <details className="my-4 md:w-1/2 md:ml-[25vw]">
         <Card className="w-full">
           <iframe
             width='100%'
@@ -51,8 +51,8 @@ function VideoPlayer() {
             {snippet[0].snippet.description}
           </p>
         </Card>
-      </div>
-    </div>
+      </details>
+    </main>
   );
 }
 

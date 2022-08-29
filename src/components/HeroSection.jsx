@@ -41,7 +41,7 @@ function HeroSection() {
       <NavBar />
 
       <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
-        <div className="max-w-xl text-center sm:text-left">
+        <section className="max-w-xl text-center sm:text-left">
           <h1 className="text-3xl font-extrabold sm:text-5xl text-sky-50">
             Culinary adventure
             <strong className="font-extrabold text-emerald-400 sm:block">
@@ -54,7 +54,7 @@ function HeroSection() {
             illo tenetur fuga ducimus numquam ea!
           </p>
 
-          <div className="flex flex-wrap gap-4 mt-8 text-center">
+          <section className="flex flex-wrap gap-4 mt-8 text-center">
             <a
               className="block w-full px-12 py-3 text-sky-50 text-sm font-medium rounded shadow bg-emerald-400 sm:w-auto active:bg-emerald-400 inactive:text-sky-50 hover:bg-sky-50 hover:text-emerald-400 focus:outline-none focus:ring"
               href="/get-started"
@@ -68,8 +68,8 @@ function HeroSection() {
             >
               Discover Culinary
             </a>
-          </div>
-        </div>
+          </section>
+        </section>
       </div>
     </section>
   );

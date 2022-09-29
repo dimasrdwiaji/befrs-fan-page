@@ -8,11 +8,12 @@ function VideoList() {
   const [videoList, setvideoList] = useState([]);
   const [pageToken, setPageToken] = useState("");
 
-  const baseURL = `https://youtube.googleapis.com/youtube/v3/activities?part=snippet`;
+  const baseURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet`;
   const maxResults = `maxResults=20`;
   const channelId = `channelId=${process.env.REACT_APP_CHANNEL_ID}`;
+  const order = `order=date`
   const apiKey = `key=${process.env.REACT_APP_API_YOUTUBE}`;
-  const request = `${baseURL}&${channelId}&${apiKey}&${maxResults}${pageToken}`;
+  const request = `${baseURL}&${channelId}&${order}&${apiKey}&${maxResults}${pageToken}`;
 
   const fetchVideos = async () => {
     try {

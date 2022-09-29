@@ -9,8 +9,9 @@ function VideoCard({ videos }) {
     return null;
   }
 
-  const handleClick = (videoId) => {
-    navigate(`/video/${videoId}`)
+  const handleClick = (video) => {
+    console.log(video);
+    navigate(`/video/${video.id.videoId}`)
   }
 
   return (
@@ -20,7 +21,7 @@ function VideoCard({ videos }) {
           imgSrc={video.snippet.thumbnails.medium.url}
           imgAlt={video.snippet.title}
           key={video.id.videoId}
-          onClick={() => handleClick(video.id.videoId)}
+          onClick={() => handleClick(video)}
         >
           <h5
             className="text-l font-bold tracking-tight text-gray-900 dark:text-white"
